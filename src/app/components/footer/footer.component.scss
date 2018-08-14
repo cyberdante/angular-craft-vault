@@ -1,0 +1,13 @@
+craft-footer {
+    .footer.main {
+        border-radius: 0;
+        bottom: 0;
+        padding: 10px;
+        position: absolute;
+        width: 100vw;
+
+        .ui.grid {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,550 @@
+/* You can add global styles to this file, and also import other style files */
+$icons-font-path: '/node_modules/semantic-ui-sass/icons';
+$flags-image-path: '/node_modules/semantic-ui-sass/images';
+
+@import '~semantic-ui-sass/semantic-ui';
+@import './vendorStyles/comment-tree';
+@import './vendorStyles/footer-main';
+@import './vendorStyles/log-detail';
+@import './vendorStyles/login-register-selector';
+@import './vendorStyles/main-navigation';
+@import './vendorStyles/pagination-control-ui';
+@import './vendorStyles/project-menu';
+@import './vendorStyles/projects-list';
+@import './vendorStyles/projects-public-cards';
+@import './vendorStyles/tags-widget';
+
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-weight: normal;
+  background-color: #f4f4f4;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cp-Panel {
+  border: 2px solid #efefef;
+  border-radius: 5px;
+}
+
+.cp-Panel-Input {
+  padding:0em 1em .5em 1em;
+}
+
+.panel-depth-0 {
+  background: #f9f9f9;
+  p {
+    color: #515151;
+  }
+}
+
+.panel-depth-1 {
+  background: #fbfbfb;
+  p {
+    color: #515151;
+  }
+}
+
+.panel-depth-2 {
+  background: #fefefe;
+  p {
+    color: #515151;
+  }
+}
+
+.cp-Panel-toggle:link {
+  text-decoration: none;
+}
+
+.cp-Panel-toggle {
+  display: block;
+  padding: 1em;
+}
+
+.cp-Panel-body-inner {
+  padding: 1em;
+}
+
+.lf-modal-open, .liquid-child, .lm-container, svg:not(:root) {
+  overflow: hidden;
+}
+
+.cp-Panel-body-inner {
+  padding: 1em;
+}
+
+.u-margin-bottom {
+  margin-bottom: 1em;
+}
+
+.liquid-container {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.home.page {
+  background: #67a3bf;
+  background: -moz-linear-gradient(35deg, #67a3bf 0%, #166596 18%, #000000 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #67a3bf), color-stop(18%, #166596), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(35deg, #67a3bf 0%, #166596 18%, #000000 100%);
+  background: -o-linear-gradient(35deg, #67a3bf 0%, #166596 18%, #000000 100%);
+  background: -ms-linear-gradient(35deg, #67a3bf 0%, #166596 18%, #000000 100%);
+  background: linear-gradient(35deg, #67a3bf 0%, #166596 18%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67a3bf', endColorstr='#000000', GradientType=1);
+  height: 900px;
+  color: #fff;
+  padding-top: 100px;
+  position: relative;
+}
+
+
+p, a, span, em, td {
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.home.page h1, .home.page h3 {
+  z-index: 9;
+  position: relative;
+}
+
+.home.page h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: -15px;
+}
+
+.home.page h3 {
+  font-size: 24px;
+}
+
+.text.center {
+  text-align: center;
+}
+
+.main.start.page {
+  padding: 52px 0px 0px 0px;
+}
+
+.main.core.page {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: auto;
+}
+
+
+@media (min-width: 768px) {
+  .main.core.page {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main.core.page {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+    .main.core.page {
+      width: 1170px;
+    }
+  }
+
+@media (min-width: 1600px) {
+  .main.core.page {
+    width: 1570px;
+  }
+}
+
+.ip.search {
+  margin: auto;
+  padding-top: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.craft.dashboard {
+  padding: 10px 10% 10px 10%;
+}
+.project.page{
+  padding: 10px 10px 10px 10px;
+  height: 100%;
+  min-height: 800px;
+}
+
+#chkflow>label, #chkip>label {
+  font-size:16px !important;
+  color: rgb(103, 103, 103);
+}
+
+.ui.popup {
+  font-size:13px !important;
+}
+
+.ui.inverted.blue.menu {
+  border: 0px solid transparent;
+  background: #273a47;
+  box-shadow: none;
+}
+
+.ui.blue.button {
+  box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+}
+.ui.blue.buttons .button, .ui.blue.button {
+  background-color: #273a47;
+  color: #FFFFFF;
+  text-shadow: none;
+  background-image: none;
+}
+
+
+.ui.blue.buttons .button:hover,
+.ui.blue.button:hover {
+  background-color: #527b91;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+.ui.blue.buttons .button:focus,
+.ui.blue.button:focus {
+  background-color: #527b91;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+.ui.blue.buttons .button:active,
+.ui.blue.button:active {
+  background-color: #527b91;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+.ui.blue.buttons .active.button,
+.ui.blue.buttons .active.button:active,
+.ui.blue.active.button,
+.ui.blue.button .active.button:active {
+  background-color: #527b91;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+/* Basic */
+.ui.basic.blue.buttons .button,
+.ui.basic.blue.button {
+  box-shadow: 0px 0px 0px 1px #527b91 inset !important;
+  color: #527b91 !important;
+}
+
+/* Blue */
+.ui.blue.segment:not(.inverted) {
+  border-top: 2px solid #273a47;
+}
+.ui.inverted.blue.segment {
+  background-color: #273a47 !important;
+  color: #FFFFFF !important;
+}
+
+.ui.card {
+  background: #FFFFFF;
+  color : #273a47;
+  padding: 0em;
+  border: none;
+  border-radius: 0.22222222rem;
+  box-shadow: 0px 1px 3px 0px #273a47, 0px 0px 0px 1px #283b49;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+}
+
+
+
+.white {
+  color: #ffffff;
+}
+
+a {
+  color: #1d76b8;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/** Toastr Styles **/
+#toast-container > div {
+  opacity: 1.0;
+}
+
+
+
+.ui.pushable.segment.component.context {
+  border-radius: 0;
+  border: 0;
+}
+
+.tab.segment {
+  height: 100%;
+}
+
+body.dimmable.undetached.dimmed {
+  .pushable {
+    transform: none;
+  }
+
+  .pusher {
+    position: static;
+  }
+}
+
+.plain {
+  color: #273a47;
+  text-decoration: none;
+}
+
+.current.page.item {
+  color: white;
+  font-size: 1.2rem;
+  min-width:60%;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.current.page.item .text {
+  margin:auto;
+  width: 200px;
+  text-align: center;
+}
+
+.ui.cards > .card > .content > .description, .ui.card > .content > .description {
+  color: #575757;
+}
+
+.ui.cards > .card > .image, .ui.card > .image {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  padding: 0em;
+  font-weight: 200;
+  font-size: 0.9em;
+  margin: 0;
+  text-align: justify;
+  background: rgb(255, 255, 255);
+}
+
+.ui.segment.pagination {
+  width: 80%;
+  margin: 5px 10% 5px 10%;
+  padding:10px;
+}
+
+
+.project.description {
+  margin: 20px 0 10px 2px;
+  padding: 10px 30px;
+  background: #efefef;
+  border-radius:5px;
+  color: #273a47;
+  font-weight: 300;
+  width: auto;
+}
+
+.project.left.title {
+  background: #fafafa;
+  color : #273a47;
+  padding: 5px;
+  margin: 0 10px 10px 5px;
+  border: none;
+  border-radius: 0.22222222rem;
+  box-shadow: 0px 2px 3px 0px #e8e8e8, 0px 0px 0px 2px #efefef;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  font-size: 16px;
+  width: 50px;
+}
+
+.contributor {
+  margin: 0;
+  padding: 0;
+  border:0;
+  color: #273a47;
+  font-weight: 500;
+  width: auto;
+}
+
+.stage {
+  background: #273a47;
+  color : #f7f7f7;
+  padding: 5px;
+  margin: 3px 10px 10px 10px;
+  border: none;
+  border-radius: 0.22222222rem;
+  box-shadow: 0px 2px 3px 0px #e8e8e8, 0px 0px 0px 2px #efefef;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  width: 150px;
+}
+
+
+// /** Execution Dashboard **/
+// .input-status {
+//   color  : white !important;
+//   padding: 10px;
+//   display: inline-block;
+// }
+//
+// .input-status.ready {
+//   background-color: #1CBB2C;
+// }
+//
+// .input-status.not-ready {
+//   background-color: #BB1C1C;
+// }
+
+/** file stuff */
+
+div.file.upload {
+  width: 530px;
+  height: 80px;
+  margin: 100px auto;
+}
+
+input.file {
+  width: 350px;
+  height: 40px;
+  border: 1px solid #BBB;
+  border-right: 0;
+  color: #888;
+  padding: 5px;
+
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  outline: none;
+}
+
+div.file.button {
+  width: 80px;
+  height: 40px;
+  background-color: #337ab7;
+  background-image: -moz-linear-gradient(top, #337ab7, #1d76b8);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#337ab7), to(#1d76b8));
+  background-image: -webkit-linear-gradient(top, #337ab7, #1d76b8);
+  background-image: -o-linear-gradient(top, #337ab7, #1d76b8);
+  background-image: linear-gradient(to bottom, #337ab7, #1d76b8);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#337ab7', endColorstr='#1d76b8', GradientType=0);
+
+  display: inline;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  padding-top: 8px;
+}
+div.file.button:before {
+  content: 'Select';
+  position: absolute;
+  left: 0; right: 0;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+div.file.button input {
+  position: relative;
+  height: 40px;
+  width: 250px;
+  display: inline;
+  cursor: pointer;
+  opacity: 0;
+}
+
+div.scrolls.horizontally {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.relaxed.large.title {
+  position: relative;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.714em;
+  line-height: 1.2857em;
+  text-transform: none;
+  overflow:hidden;
+  padding-bottom: 10px;
+}
+
+/* for the dropdown menu - should move there eventually */
+
+.ui.menu .ui.dropdown .menu > .item {
+  font-size: 0.83em !important;
+  padding:8px !important;
+}
+
+.ui.menu .dropdown.item .menu {
+  background-color: #171717;
+}
+
+.ui.menu .ui.dropdown .menu > .item {
+  color: #ffffff !important;
+}
+
+.ui.menu .ui.dropdown .menu > .item:hover {
+  color: #dbdcdd !important;
+}
+
+.ui.dividing.header {
+  margin-bottom: 0;
+}
+
+.project-hierarchy {
+  padding-top: 10px;
+}

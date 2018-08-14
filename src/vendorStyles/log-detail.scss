@@ -1,0 +1,29 @@
+/** components/log-detail.scss **/
+table.logs, table.logs th, table.logs td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   border-spacing: 10px 5px;
+   text-align: center;
+   padding: 5px 10px;
+}
+
+/* unvisited link */
+// table.blue a:link {
+//   color: #FFE4C4;
+// }
+//
+// table.blue a {
+//   color: #FFE4C4;
+// }
+//
+// table.blue a:visited {
+//   color: #FFE4C4;
+// }
+//
+// table.blue a:hover {
+//   color: #FFE4C4;
+// }
+//
+// table.blue a:active {
+//   color: #FFE4C4;
+// }

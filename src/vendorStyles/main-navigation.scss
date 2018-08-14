@@ -1,0 +1,47 @@
+/** components/main-navigation.scss **/
+
+.user.login .ui.avatar.image {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 10px;
+}
+
+.ui.right.spaced.image.logo.header {
+  width: 110px;
+  margin: -3px 0 4px 0;
+  position: relative;
+  float: left;
+}
+
+.ui.menu.main.nav.bar .item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ui.menu.main.nav.bar .header.item.logo div {
+  font-weight: 600;
+  margin-left: -3px;
+  margin-top: 7px;
+  position: relative;
+  float: left;
+}
+
+.ui.menu.main.nav.bar .ui.button {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/** Fixes for the addition of crap bootstrap naming */
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: inherit;
+  }
+
+  .navbar {
+    position: inherit;
+    min-height: inherit;
+    margin-bottom: inherit;
+    border: inherit;
+  }
+}

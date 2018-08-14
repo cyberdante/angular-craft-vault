@@ -32,11 +32,13 @@
     "font-awesome": "4.7.0",
     "ie-shim": "0.1.0",
     "intl": "1.2.5",
+    "keen-tracking": "^4.0.2",
     "moment": "^2.22.2",
     "ngx-bootstrap": "2.0.5",
     "ngx-order-pipe": "1.0.2",
     "ngx-select-ex": "3.5.9",
     "rxjs": "^6.0.0",
+    "semantic-ui-sass": "^2.3.1",
     "utf8": "2.1.2",
     "zone.js": "~0.8.26"
   },
