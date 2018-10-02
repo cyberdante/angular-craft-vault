@@ -1,44 +1,25 @@
-<div class="ui inverted blue fixed menu main nav bar" style="padding: 0 7% 0 7%;">
-
-  <a class="header item logo" (click)="toDashboard">
-    <img class="ui right spaced image logo header" src="/assets/images/craft.png" alt="CRAFT Logo" />
-    <div>REPOSITORY</div>
-  </a>
-
-  <div class="ui right inverted menu" *ngIf="session && session.isAuthenticated">
-      <!-- <style type="text/css">
-        .item.ui.dropdown {
-          background: #273a47 !important;
-        }
-      </style> -->
-      <!-- {{#ui-dropdown class="item"}}
-        <div class="ui user login">
-          <img class="ui avatar image" src="{{gravatarUrl}}" alt="User gravatar" width="25px"> {{user.fullName}}
-        </div>
-        <i class="dropdown icon"></i>
-        <div class="ui menu">
-
-          <div class="item" {{action 'toDashboard'}}>
-            <i class="dashboard icon"></i> Dashboard
-          </div>
-
-          <a href="{{osf_url}}/myprojects" class="item">
-            <i class="block layout icon"></i> My Projects
-          </a>
-
-          <a href="{{osf_url}}/profile" class="item">
-            <i class="user icon"></i> My Profile
-          </a>
-
-          <a href="{{osf_url}}/settings" class="item">
-            <i class="settings icon"></i> Settings
-          </a>
-
-          <div class="item" {{action 'logout'}}>
-            <i class="sign out icon"></i> Log out
-          </div>
-        </div>
-      {{/ui-dropdown}}  -->
+<div class="ui inverted blue fixed menu main nav bar">
+    <a class="header item logo" href="/">
+        <img class="ui right spaced image logo header" src="/assets/images/craft.png" alt="CRAFT Logo" />
+        <div>VAULT</div>
+    </a>
+    <!--  *ngIf="true || session && session.isAuthenticated" -->
+    <div class="ui right inverted menu" *ngIf="currentUser">
+        <h1>Hi {{currentUser.firstName}}!</h1>
+    </div>
+    <!-- <div class="dropdown" dropdown dropdownToggle>
+        <a class="dropdown-toggle">
+          <img *ngIf="user && user.gravatarUrl && user.gravatarUrl.length" class="avatar" src="{{user.gravatarUrl}}" alt="User gravatar" width="25px" /> {{fullName()}}
+        </a>
+        <ul *dropdownMenu class="dropdown-menu" role="menu">
+          <li role="menuitem"><a class="dropdown-item" routerLink="/dashboard" routerLinkActive="active"><i class="dashboard icon"></i> Dashboard</a></li>
+          <li role="menuitem"><a class="dropdown-item" href="#"><i class="block layout icon"></i> My Projects</a></li>
+          <li role="menuitem"><a class="dropdown-item" href="#"><i class="user icon"></i> My Profile</a></li>
+          <li class="divider dropdown-divider"></li>
+          <li role="menuitem"><a class="dropdown-item" href="#"><i class="settings icon"></i> Settings</a></li>
+          <li role="menuitem"><a class="dropdown-item" href="#"><i class="sign out icon"></i> Log out</a></li>
+        </ul>
+      </div>
+    </div> -->
     <!-- {{else}} {{#link-to 'login' class="ui black item"}}<i class="sign in icon"></i>Login {{/link-to}}  -->
-  </div>
 </div>

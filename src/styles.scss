@@ -1,13 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-$icons-font-path: '/node_modules/semantic-ui-sass/icons';
-$flags-image-path: '/node_modules/semantic-ui-sass/images';
+$icons-font-path: '../node_modules/semantic-ui-sass/icons';
+$flags-image-path: '../node_modules/semantic-ui-sass/images';
+
+@import './vendorStyles/variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 @import '~semantic-ui-sass/semantic-ui';
 @import './vendorStyles/comment-tree';
-@import './vendorStyles/footer-main';
+// @import './vendorStyles/footer-main';
 @import './vendorStyles/log-detail';
 @import './vendorStyles/login-register-selector';
-@import './vendorStyles/main-navigation';
+// @import './vendorStyles/main-navigation';
 @import './vendorStyles/pagination-control-ui';
 @import './vendorStyles/project-menu';
 @import './vendorStyles/projects-list';
@@ -26,6 +29,13 @@ body {
   background-color: #f4f4f4;
   -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-size: 120%;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .cp-Panel {

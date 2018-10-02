@@ -1,0 +1,94 @@
+craft-header {
+  .ui.menu.main.nav.bar {
+    padding: 0 7% 0 7%;
+    font-size: 18px;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border-radius: 0;
+    min-height: 2.88888889em;
+  }
+  .dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+    line-height: 1;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    flex: 0 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.1); // #273a47 !important;
+    padding: 0.92857143em 1.14285714em;
+    text-transform: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: normal;
+    transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
+    cursor: pointer;
+  }
+  .dropdown-menu {
+    padding: 0 0 16px 0;
+    border-radius: 0;
+    border: 1px solid #1B1C1D;
+    margin: 0;
+    &.show {
+      right: 0 !important;
+    }
+  }
+  .dropdown-menu,
+  .dropdown-item {
+    background: #1B1C1D !important; // #273a47;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 8px !important;
+    &:hover,
+    &:active,
+    .active {
+      background: #1B1C1D;
+      color: rgb(157, 120, 90);
+    }
+  }
+  .dropdown-toggle {
+    font-size: 18px;
+    .avatar {
+      width: 1.5em;
+      height: 1.5em;
+      margin-right: 10px;
+      border-radius: 500rem;
+    }
+  }
+  .ui.right.spaced.image.logo.header {
+    width: 110px;
+    margin: -3px 0 4px 0;
+    position: relative;
+    float: left;
+  }
+  .ui.menu.main.nav.bar .item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .ui.menu.main.nav.bar .header.item.logo div {
+    font-weight: 600;
+    margin-left: -3px;
+    margin-top: 7px;
+    position: relative;
+    float: left;
+  }
+  .ui.menu.main.nav.bar .ui.button {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /** Fixes for the addition of crap bootstrap naming */
+  @media (min-width: 768px) {
+    .navbar {
+      border-radius: inherit;
+    }
+    .navbar {
+      position: inherit;
+      min-height: inherit;
+      margin-bottom: inherit;
+      border: inherit;
+    }
+  }
+}

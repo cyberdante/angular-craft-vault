@@ -1,0 +1,8 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "html.format.endWithNewline": true,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true
+}
