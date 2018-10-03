@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { User } from '../../models/user';
-import { UserService } from '../../services';
 
 @Component({
     selector: 'craft-header',

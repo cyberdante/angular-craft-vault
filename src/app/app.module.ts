@@ -13,7 +13,7 @@ import { ToastrModule, QueueComponent } from 'pb-ngx-toast';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AlertComponent } from './directives';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DashboardComponent } from './components/dashboard';
 import { AuthGuard } from './guards';
 import { LoginComponent } from './components/login';
 import { RegisterComponent } from './components/register';
